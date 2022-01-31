@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>First Task</h1>
+<p id="name"></p>
+<p id="group"></p>
+<h1>Second task</h1>
+<p id="year"></p>
+<p id="weekday"></p>
+<p id="day"></p>
+<p id="month"></p>
+<p id="time"></p>
+<h1>Third Task</h1>
+<p id="left"></p>
+<h1>Fourth Task</h1>
+<p>1st Number : <input type="number" id="firstnum"></p>
+<p>2nd Number : <input type="number" id="secondnum"></p>
+<button onclick="Multiply()">Multiply</button>
+<button onclick="Divide()">Divide</button>
+<p>The Result Is:</p>
+<p id="res"></p>
+<script>
+  document.getElementById("name").innerHTML = "Sultan";
+  document.getElementById("group").innerHTML = "CS-2122N";
+  document.getElementById("year").innerHTML="Year: 2022";
+  document.getElementById("weekday").innerHTML="Today is : Monday"
+  document.getElementById("day").innerHTML="Date: 31";
+  document.getElementById("month").innerHTML="Month: January";
+  document.getElementById("time").innerHTML="Current time is : 5 PM : 17 : 48";
+  document.getElementById("left").innerHTML="881 days left until the freedom!";
+  function Multiply(){
+    var a=document.getElementById("firstnum").value;
+    var b=document.getElementById("secondnum").value;
+    document.getElementById("res").innerHTML=a*b;
+  }
+  function Divide(){
+    var a=document.getElementById("firstnum").value;
+    var b=document.getElementById("secondnum").value;
+    document.getElementById("res").innerHTML=a/b;
+  }
+</script>
+</body>
+</html>
